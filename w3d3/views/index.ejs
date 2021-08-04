@@ -1,0 +1,35 @@
+<%- include('partials/_head.ejs') %>
+
+	<section>
+		<main>
+			<div class="door">
+
+			</div>
+			<% if(email==="pontiac@bandit.com" ){ %>
+				<img src="/doug.webp" />
+				<% } %>
+					<% if(email==="gentleman@cambrioleur.com" ){ %>
+						<img src="/arsene.gif" />
+						<% } %>
+		</main>
+	</section>
+	<section>
+		<% if(name){ %>
+			<form action="/logout" method="POST">
+				<button type="submit">Get me out of here. (logout)</button>
+			</form>
+			<% } %>
+				<% if(!name){ %>
+
+					<form action="/login" method="POST">
+						<label for="email">Email address:</label>
+						<input type="email" name="email" placeholder="Enter your email">
+						<label for="password">Password:</label>
+						<input type="password" name="password" placeholder="Enter your password">
+						<button type="submit">Open the vault!</button>
+					</form>
+					<% } %>
+	</section>
+	</body>
+
+	</html>
