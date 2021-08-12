@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+*{margin:0;padding:0;outline:0;font-size:1em;font-weight:normal;font-style:normal;border:0;text-decoration:none;list-style-type:none}
+
+body{
+  font-family:'Roboto';
+  font-size:18px;
+}
+h1{
+  font-weight:900;
+  font-size:4em;
+}
+h2{
+  font-weight:900;
+  font-size:2em;
+}
+section{
+  padding:2em;
+}
+p{
+  margin:1em 0.5em;
+}
+ul li{
+  list-style-type:disc;
+}
+
+.text-container{
+  width:100%;
+  max-width:900px;
+  margin:0 auto;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-around;
+}
+/* Specific CSS */
+
+header{
+  min-height:80vh;
+  background-image:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1550826/francis_home.jpg);
+  background-size:cover;
+  background-position:center center;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+header h1{
+  border:10px solid black;
+  padding:5px 10px;
+}
+
+.intro{
+  display:flex;
+  background:#f0f0f0;
+  justify-content:center;
+  align-items:center;
+}
+.intro img{
+  width:300px;
+  height:auto;
+  border-radius:50%;
+  padding:18px;
+}
+.intro p{
+  max-width:700px;
+}
+.intro p span{
+  font-size:11px;
+  display:block;
+}
+
+.likes{
+  
+}
+.likes h2, .likes p{
+  width:100%;
+}
+
+.teaching{
+  display:flex;
+  background:#f0f0f0;
+  justify-content:center;
+  align-items:center;
+}
+.teaching h2, .teaching p{
+  width:100%;
+}
+.teaching article{
+  padding:18px;
+  border-bottom:1px solid #bbb;
+  display:grid;
+  grid-gap:18px;
+  grid-template-columns:180px auto;
+  grid-template-areas:
+      "company position"
+      ". description"
+}
+.teaching article:last-of-type{
+  border-bottom:none;
+}
+.teaching article h3{
+  grid-area:company;
+  font-weight:700;
+}
+.teaching article h4{
+  grid-area:position;
+  font-weight:700;
+}
+.teaching article p{
+  grid-area:description;
+  margin:0;
+}
+.coding{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.coding h2, .coding p{
+  width:100%;
+}
+.coding article{
+  padding:18px;
+  border-bottom:1px solid #bbb;
+  display:grid;
+  grid-gap:18px;
+  grid-template-columns:180px auto;
+  grid-template-areas:
+      "company position"
+      ". description"
+}
+.coding article:last-of-type{
+  border-bottom:none;
+}
+.coding article h3{
+  grid-area:company;
+  font-weight:700;
+}
+.coding article h4{
+  grid-area:position;
+  font-weight:700;
+}
+.coding article p{
+  grid-area:description;
+  margin:0;
+}
+footer{
+  background:#333;
+  color:white;
+  text-align:center;
+  padding:1em;
+}
+footer a{
+  color:white;
+  padding:0 5px;
+}
+
+@media screen and (max-width:1024px){
+  .intro{flex-direction:column;}
+
+  .likes div{
+    flex-direction:column;
+    ul li{
+      list-style-type: none;
+      padding-left:1em;
+    }
+  }
+  .teaching, .coding {
+    article {
+      display:flex;
+      flex-direction:column;
+    }
+  }
+}
+
+@media screen and (max-width:700px){
+  body{
+    font-size:25px;
+  }
+  header{
+    min-height:200px;
+
+    h1{
+      display:none;
+    }
+  }
+}

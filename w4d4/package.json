@@ -1,0 +1,24 @@
+{
+  "name": "w4d4-lecture_css_sass_demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "local": "nodemon server.js",
+    "sass-watch": "sass --watch public/styles/scss/main.scss:public/styles/css/main.css"
+  },
+  "author": "Francis Bourgouin",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "node-sass-middleware": "^0.11.0",
+    "path": "^0.12.7",
+    "sass": "^1.32.13",
+    "sass-middleware": "0.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.7"
+  }
+}

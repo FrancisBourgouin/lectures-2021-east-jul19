@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i");
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 1em;
+  font-weight: normal;
+  font-style: normal;
+  border: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  font-family: Roboto;
+  font-size: 18px;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 4em;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 2em;
+}
+
+section {
+  padding: 2em;
+}
+
+p {
+  margin: 1em 0.5em;
+}
+
+ul li {
+  list-style-type: disc;
+}
+
+.text-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Specific CSS */
+header {
+  min-height: 400px;
+  height: 70vh;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1550826/francis_home.jpg);
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  border: 0.2em solid black;
+  padding: 0.25em 0.5em;
+}
+
+.intro {
+  display: flex;
+  background: #f0f0f0;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro img {
+  width: 300px;
+  height: auto;
+  border-radius: 50%;
+  padding: 1em;
+}
+
+.intro p {
+  max-width: 700px;
+}
+
+.intro p span {
+  font-size: 0.7em;
+  display: block;
+}
+
+.likes h2, .likes p {
+  width: 100%;
+}
+
+.teaching {
+  display: flex;
+  background: #f0f0f0;
+  justify-content: center;
+  align-items: center;
+}
+
+.teaching h2, .teaching p {
+  width: 100%;
+}
+
+.teaching article {
+  padding: 1em;
+  border-bottom: 1px solid #bbb;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: 10em auto;
+  grid-template-areas: "company position" ". description";
+}
+
+.teaching article:last-of-type {
+  border-bottom: none;
+}
+
+.teaching article h3 {
+  grid-area: company;
+  font-weight: 700;
+}
+
+.teaching article h4 {
+  grid-area: position;
+  font-weight: 700;
+}
+
+.teaching article p {
+  grid-area: description;
+  margin: 0;
+}
+
+.coding {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coding h2, .coding p {
+  width: 100%;
+}
+
+.coding article {
+  padding: 1em;
+  border-bottom: 1px solid #bbb;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: 10em auto;
+  grid-template-areas: "company position" ". description";
+}
+
+.coding article:last-of-type {
+  border-bottom: none;
+}
+
+.coding article h3 {
+  grid-area: company;
+  font-weight: 700;
+}
+
+.coding article h4 {
+  grid-area: position;
+  font-weight: 700;
+}
+
+.coding article p {
+  grid-area: description;
+  margin: 0;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+footer a {
+  color: white;
+  padding: 0 0.2em;
+}
+
+@media screen and (max-width: 1000px) {
+  * {
+    color: #0C315C;
+  }
+
+  header {
+    height: 30vh;
+  }
+  header h1 {
+    font-size: 2em;
+  }
+
+  .intro {
+    flex-direction: column;
+  }
+
+  .likes h2, .likes p {
+    text-align: center;
+  }
+
+  .teaching h2, .teaching > p {
+    text-align: center;
+  }
+
+  .teaching article {
+    display: block;
+  }
+
+  .coding h2, .coding div > p {
+    text-align: center;
+  }
+
+  .coding article {
+    display: block;
+  }
+}
+.teaching h2, .teaching > p {
+  test-align: center;
+}
+.teaching:hover {
+  background: yellow;
+}

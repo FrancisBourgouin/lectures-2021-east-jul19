@@ -1,0 +1,30 @@
+body * {
+  display: block;
+  margin: 20px;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 30px;
+}
+
+section {
+  font-size: 30px;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.75em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+article {
+  font-size: 0.5em;
+}

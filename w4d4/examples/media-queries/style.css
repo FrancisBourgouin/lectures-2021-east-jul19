@@ -1,0 +1,35 @@
+*{
+  box-sizing:border-box;
+}
+body{
+  font-family: 'Noto Sans', sans-serif;
+}
+
+section{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-around;
+}
+section p{
+  width:48%;
+  max-width:75ch;
+  min-width:40ch;
+  width:clamp(40ch, 48%, 75ch)
+}
+
+@media screen and (max-width:850px){
+  body{
+    background:black;
+    color:white;
+  }
+  section {
+    flex-direction:column;
+    align-items:center;
+    flex-wrap:no-wrap;
+    
+  }
+  section p {
+    padding:1em;
+    width:100%;
+  }
+}

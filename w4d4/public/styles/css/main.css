@@ -1,0 +1,19 @@
+body ul {
+  display: block;
+}
+body ul li {
+  text-decoration: underline;
+}
+body ul li ul {
+  display: flex;
+}
+body ul li ul li {
+  color: #C0FFEE;
+}
+
+body {
+  background-color: #C0FFEE;
+  padding: 2em;
+}
+
+/*# sourceMappingURL=main.css.map */
