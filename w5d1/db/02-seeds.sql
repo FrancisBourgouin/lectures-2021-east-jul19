@@ -24,4 +24,3 @@ VALUES
   ('Why did the chicken cross the road?', 'Because there was a green light',4.46, 7),
   ('What is small, green and goes up and down?', 'A green pea in an elevator',4.46, null),
   ('Did you hear about the monkeys who shared an Amazon account?', 'They were Prime mates.',4, 6);
-
